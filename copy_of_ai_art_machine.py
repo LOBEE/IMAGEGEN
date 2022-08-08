@@ -75,7 +75,6 @@ Some keywords that work well are "studio ghibli", "trending on artstation", "ren
    When using multiple prompts, you can "weight" them by putting `:n` after the prompt. For example, `bat | man:3` will tell the art machine to focus 3 times as hard on `man` than on `bat`."""
 
 #@title Instance Size { vertical-output: true, display-mode: "form" }
-x = !nvidia-smi
 if "MiB / 15" in x[9]:
   print("Google gave you a big instance! Image size can go up to 700!")
 else:
